@@ -41,11 +41,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/gitporter.git"
+    "url": "https://github.com/forpsyte/gitporter.git"
   },
-  "homepage": "https://github.com/yourusername/gitporter#readme",
+  "homepage": "https://github.com/forpsyte/gitporter",
   "bugs": {
-    "url": "https://github.com/yourusername/gitporter/issues"
+    "url": "https://github.com/forpsyte/gitporter/issues"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
