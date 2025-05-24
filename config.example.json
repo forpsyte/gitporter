@@ -1,0 +1,47 @@
+{
+  "jira": {
+    "url": "https://yourcompany.atlassian.net/",
+    "email": "your-email@company.com",
+    "apiToken": "your-jira-api-token",
+    "jql": "project = \"YOUR_PROJECT\" AND created >= -30d ORDER BY created DESC",
+    "subtasks": {
+      "enabled": true,
+      "filterByStatus": ["To Do", "In Progress", "Code Review", "Testing"]
+    }
+  },
+  "github": {
+    "token": "your-github-token",
+    "repo": "your-org/your-repo"
+  },
+  "openai": {
+    "apiKey": "your-openai-api-key",
+    "model": "gpt-3.5-turbo",
+    "maxTokens": 200
+  },
+  "migration": {
+    "batchSize": 10,
+    "dryRun": false,
+    "verbose": true,
+    "statusMapping": {
+      "To Do": "open",
+      "In Progress": "open",
+      "Code Review": "open",
+      "Testing": "open",
+      "Done": "closed",
+      "Closed": "closed",
+      "Resolved": "closed",
+      "Won't Do": "closed"
+    },
+    "labelMapping": {
+      "Bug": "bug",
+      "Story": "feature",
+      "Task": "enhancement",
+      "Epic": "epic",
+      "Improvement": "enhancement",
+      "New Feature": "feature",
+      "Sub-task": "subtask"
+    },
+    "attachmentStrategy": "link",
+    "includeSummary": true
+  }
+} 
